@@ -1,18 +1,18 @@
-# ADA-8XR on modern macOS
+# ADA-8XR on Apple M-series Macs
 
-**Use the Prism Sound ADA-8XR FireWire card on Apple Silicon Macs running macOS 26 (Tahoe) — where Apple removed FireWire support entirely.**
+**Use the Prism Sound ADA-8XR FireWire card on Apple M-series Macs (Apple Silicon: M1/M2/M3/M4…) running macOS 26 (Tahoe) — where Apple removed FireWire support entirely.**
 
-Verified working: the ADA-8XR enumerates as a CoreAudio device (**8 in / 8 out @ 48 kHz over FireWire**, shown as *"Dream ADA-8"*) and plays audio through its analog outputs. No kernel code, no reverse engineering, no Prism Sound software required.
+Verified working on an **M4 Max** MacBook Pro: the ADA-8XR enumerates as a CoreAudio device (**8 in / 8 out @ 48 kHz over FireWire**, shown as *"Dream ADA-8"*) and plays audio through its analog outputs. No kernel code, no reverse engineering, no Prism Sound software required.
 
 ```
-macOS 26 (Tahoe) ──Thunderbolt──▶ ASFireWire (DriverKit FW stack)
-                                      │  IEEE 1394
-                                      ▼
-                              ADA-8XR FireWire card
-                              (standard BeBoB protocol)
-                                      │  analog
-                                      ▼
-                                your monitors 🎧
+M-series Mac (macOS 26 Tahoe) ──Thunderbolt──▶ ASFireWire (DriverKit FW stack)
+                                                    │  IEEE 1394
+                                                    ▼
+                                            ADA-8XR FireWire card
+                                            (standard BeBoB protocol)
+                                                    │  analog
+                                                    ▼
+                                              your monitors 🎧
 ```
 
 ## Why this works (and why it was "impossible")

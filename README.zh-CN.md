@@ -1,18 +1,18 @@
-# ADA-8XR 火线接现代 macOS
+# ADA-8XR 火线接苹果 M 系列芯片 Mac
 
-**在 Apple Silicon + macOS 26 (Tahoe) 上使用 Prism Sound ADA-8XR 火线卡——在苹果彻底移除火线支持的系统上。**
+**在 Apple M 系列芯片（Apple Silicon：M1/M2/M3/M4……）+ macOS 26 (Tahoe) 的 Mac 上使用 Prism Sound ADA-8XR 火线卡——在苹果彻底移除火线支持的系统上。**
 
-已实测跑通：ADA-8XR 被枚举为 CoreAudio 设备（**火线 8 进 8 出 @ 48 kHz**，显示名 *"Dream ADA-8"*），并从模拟口正常出声。无需内核代码、无需逆向工程、无需 Prism 官方软件。
+已在 **M4 Max** MacBook Pro 上实测跑通：ADA-8XR 被枚举为 CoreAudio 设备（**火线 8 进 8 出 @ 48 kHz**，显示名 *"Dream ADA-8"*），并从模拟口正常出声。无需内核代码、无需逆向工程、无需 Prism 官方软件。
 
 ```
-macOS 26 (Tahoe) ──雷电──▶ ASFireWire（社区 DriverKit 火线栈）
-                                │  IEEE 1394
-                                ▼
-                        ADA-8XR 火线卡
-                        （标准 BeBoB 协议）
-                                │  模拟
-                                ▼
-                          你的监听设备 🎧
+M 系列 Mac (macOS 26 Tahoe) ──雷电──▶ ASFireWire（社区 DriverKit 火线栈）
+                                           │  IEEE 1394
+                                           ▼
+                                   ADA-8XR 火线卡
+                                   （标准 BeBoB 协议）
+                                           │  模拟
+                                           ▼
+                                     你的监听设备 🎧
 ```
 
 [English README](README.md)

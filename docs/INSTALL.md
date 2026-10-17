@@ -1,6 +1,6 @@
-# Installation — verified 2026-10 on M4 Max / macOS 26 (Tahoe)
+# Installation — verified 2026-10 on an Apple M-series Mac (M4 Max, macOS 26 Tahoe)
 
-End-to-end setup for the ADA-8XR FireWire card on modern macOS via [ASFireWire](https://github.com/mrmidi/ASFireWire). Verified with `ASFW-0.5.0-beta.1` on an M4 Max running macOS 26.6.
+End-to-end setup for the ADA-8XR FireWire card on **Apple M-series (Apple Silicon) Macs** via [ASFireWire](https://github.com/mrmidi/ASFireWire). Verified with `ASFW-0.5.0-beta.1` on an M4 Max running macOS 26.6.
 
 If anything misbehaves, see [TROUBLESHOOTING.md](TROUBLESHOOTING.md) — it is distilled from a real bring-up session and covers every failure we actually hit.
 
