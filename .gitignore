@@ -1,0 +1,16 @@
+# Compiled artifacts (rebuild with `make`)
+tools/fwprobe/fwprobe
+tools/setout
+driver/ada8xrctl
+driver/_api_test
+*.o
+
+# Third-party payloads kept locally for convenience, not redistributed here.
+# Get ASFW releases from https://github.com/mrmidi/ASFireWire/releases
+asfirewire/ASFW-0.5.0-beta.1/
+asfirewire/ASFW-0.5.0-beta.1.zip
+asfirewire/ASFireWire/
+
+# macOS cruft
+.DS_Store
+._*

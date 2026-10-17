@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleIdentifier</key>
+	<string>local.ada8xr.FWSRevive</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>FireWireRevive</string>
+	<key>CFBundlePackageType</key>
+	<string>KEXT</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+	<key>OSBundleRequired</key>
+	<string>Local-Root</string>
+	<key>IOKitPersonalities</key>
+	<dict>
+		<key>FireWireReviveOHCI</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.apple.driver.AppleFWOHCI</string>
+			<key>IOClass</key>
+			<string>com.apple.driver.AppleFWOHCI</string>
+			<key>IOProviderClass</key>
+			<string>IOPCIDevice</string>
+			<!-- PCI class 0x0C0010 = Serial bus / FireWire / OHCI -->
+			<!-- 精确匹配 prog-IF=0x10（OHCI 1.x），只抓火线 OHCI 控制器 -->
+			<key>IOPCIClassMatch</key>
+			<string>0x0c0010&amp;0xffffff</string>
+			<key>IOResourceMatch</key>
+			<string>IOKit</string>
+		</dict>
+	</dict>
+	<key>OSBundleLibraries</key>
+	<dict>
+		<key>com.apple.iokit.IOFireWireFamily</key>
+		<string>4.8.3</string>
+		<key>com.apple.iokit.IOPCIFamily</key>
+		<string>2.9</string>
+		<key>com.apple.kpi.iokit</key>
+		<string>20.0</string>
+		<key>com.apple.kpi.mach</key>
+		<string>20.0</string>
+	</dict>
+</dict>
+</plist>
