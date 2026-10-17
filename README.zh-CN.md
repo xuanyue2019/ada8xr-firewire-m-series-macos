@@ -103,5 +103,6 @@ M 系列 Mac (macOS 26 Tahoe) ──雷电──▶ ASFireWire（社区 DriverKi
 - [ASFireWire](https://github.com/mrmidi/ASFireWire)，作者 mrmidi 及贡献者（**Apache-2.0**）——让这一切成为可能的 DriverKit 火线栈。本仓库不打包它，请到其 releases 下载。
 - Linux 内核 `sound/firewire/bebob`（**GPL-2.0**）——协议参考实现；`driver/ref/` 存了几份原文供离线研读，见该目录内的许可说明。
 - Prism Sound ADA-8XR 是 Prism Media Products Limited 的产品。本项目是独立社区行为，与 Prism Sound 无关、未获其背书。
+- **开发工具**：本项目的调机、工具开发与文档撰写使用 [ZCode](https://z.ai)（Z.ai 出品的 GLM 大模型 AI 编程助手）完成。
 
 本仓库自有代码与文档以 **MIT License** 发布（见 [LICENSE](LICENSE)）。

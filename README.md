@@ -101,5 +101,6 @@ This repo packages the **verified end-to-end recipe**, the **diagnostic tools**,
 - [ASFireWire](https://github.com/mrmidi/ASFireWire) by mrmidi and contributors (**Apache-2.0**) — the DriverKit FireWire stack that made all of this possible. Not bundled in this repo; download from its releases.
 - Linux kernel `sound/firewire/bebob` (**GPL-2.0**) — the protocol reference implementation; verbatim copies of a few files are kept in `driver/ref/` for offline study, see the notice there.
 - Prism Sound ADA-8XR is a product of Prism Media Products Limited. This is an independent community effort, not affiliated with or endorsed by Prism Sound.
+- **Tooling**: this project's bring-up session, tools, and documentation were developed with [ZCode](https://z.ai) — the GLM-powered AI coding agent by Z.ai.
 
 This repository's own code and docs are released under the **MIT License** (see [LICENSE](LICENSE)).
