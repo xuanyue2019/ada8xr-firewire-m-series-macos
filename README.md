@@ -47,7 +47,7 @@ Route A, the Apple adapter chain (verified here):
 | Apple TB2→FireWire 800 adapter | A1463, same |
 | FW800 (9-pin) → FW400 (6-pin) cable | the ADA-8XR FW card has a 6-pin port |
 
-Route B, one box instead of two adapters: a **Thunderbolt dock with a built-in FW800 port** (several OWC and Sonnet models have one) plus the same FW400 cable. It has to be a Thunderbolt dock — a plain USB-C hub won't work, the FireWire controller needs PCIe over Thunderbolt to appear on the bus. The dock route is expected to behave identically (it presents the same PCI OHCI controller class); the adapter chain is what has actually been verified on this side.
+Route B, one box instead of two adapters: a **Thunderbolt dock with a built-in FW800 port**, plus the same FW400 cable. Known options that plug straight into an M-series Mac: OWC's 13/14-port Thunderbolt 3 Dock (discontinued, second-hand) and the 11-port Thunderbolt Dock (TB4) — each carries one FW800 port. Sonnet's Echo 15/15+ also has FW800 but is a TB2-era dock and needs the TB3→TB2 adapter in front, so it saves you nothing. Whatever the brand, it must be a Thunderbolt dock — a plain USB-C hub won't work, the FireWire controller needs PCIe over Thunderbolt to appear on the bus. The dock route is expected to behave identically (it presents the same PCI OHCI controller class); the adapter chain is what has actually been verified on this side.
 
 Either way: ADA-8XR with the FireWire card installed, powered on.
 
