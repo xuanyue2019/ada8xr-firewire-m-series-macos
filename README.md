@@ -37,16 +37,19 @@ This repo packages the **verified end-to-end recipe**, the **diagnostic tools**,
 
 ## Quick start
 
-**Hardware required**
+**Hardware required — two ways onto the FireWire bus**
+
+Route A, the Apple adapter chain (verified here):
 
 | Item | Notes |
 |---|---|
 | Apple TB3 (USB-C)→TB2 adapter | A1621, discontinued — second-hand |
 | Apple TB2→FireWire 800 adapter | A1463, same |
 | FW800 (9-pin) → FW400 (6-pin) cable | the ADA-8XR FW card has a 6-pin port |
-| ADA-8XR with FireWire card | powered on |
 
-(A Thunderbolt dock with an FW800 port — older OWC/Sonnet TB2/3 models — replaces the two adapters.)
+Route B, one box instead of two adapters: a **Thunderbolt dock with a built-in FW800 port** (several OWC and Sonnet models have one) plus the same FW400 cable. It has to be a Thunderbolt dock — a plain USB-C hub won't work, the FireWire controller needs PCIe over Thunderbolt to appear on the bus. The dock route is expected to behave identically (it presents the same PCI OHCI controller class); the adapter chain is what has actually been verified on this side.
+
+Either way: ADA-8XR with the FireWire card installed, powered on.
 
 **Steps** (details in [docs/INSTALL.md](docs/INSTALL.md))
 

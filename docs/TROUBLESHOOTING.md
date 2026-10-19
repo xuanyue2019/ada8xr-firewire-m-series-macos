@@ -77,7 +77,7 @@ The installer hard-stops before touching anything if SIP is on — by design. Do
 
 ## 7. No FireWire chip on PCI (`ioreg … | grep 0c0010` empty)
 
-- Adapter chain not fully seated / a non-Apple link in the chain. The TI OHCI appears on PCI only when the Thunderbolt chain enumerates; check **System Information → Thunderbolt** — both adapters should be listed.
+- Adapter chain not fully seated, or a hub that isn't actually Thunderbolt. A plain USB-C hub cannot carry FireWire — the controller needs PCIe over Thunderbolt. The OHCI chip appears on PCI only when the Thunderbolt side enumerates; check **System Information → Thunderbolt** — the two adapters (Route A) or the dock (Route B) should be listed there.
 - On macOS 26 the FireWire *page* of System Information is gone; that is expected and meaningless here.
 
 ## 8. Device present but sample rate won't switch / stays at one rate
